@@ -9,20 +9,18 @@ import { NameInputContextProvider } from '../contexts/NameInputContext/NameInput
 function LandingPage() {
 
   return (
-    <NameInputContextProvider>
-      <div className="bg-black h-screen w-auto">
-        <Textarea
-          placeholder="hello world"
-          label="Name"
-          styles={(theme) => ({
-            description: {
-              color: '#FFFFFF',
-            },
-          })}
-        />
-        <TestContext />
-      </div>
-    </NameInputContextProvider>
+    <div className="bg-black h-screen w-auto">
+      <Textarea
+        placeholder="hello world"
+        label="Name"
+        styles={(theme) => ({
+          label: {
+            color: '#cacaca',
+          },
+        })}
+      />
+      <TestContext />
+    </div>
   )
 }
 
